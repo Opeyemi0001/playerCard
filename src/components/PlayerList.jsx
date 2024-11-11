@@ -3,9 +3,10 @@ import Player from "./Player"
 
 const PlayerList = () => {
   return (
-    <div>
-      {players.map((player, index) => (
-        <Player key={index} {...Player} />
+    <div className="d-flex ">
+      {players.map((playes, index) => (
+        <Player
+          key={index} {...playes} />
       ))}
     </div>
   )
